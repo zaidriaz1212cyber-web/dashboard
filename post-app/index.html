@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Post App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="bi bi-chat-square-quote"></i> PostApp
+            </a>
+            <button class="btn btn-outline-secondary ms-auto d-flex align-items-center gap-2" id="theme-toggle">
+                <i class="bi bi-moon-fill" id="theme-icon"></i> <span>Dark Mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <!-- Main Content Column -->
+            <div class="col-lg-8 col-md-10">
+                
+                <!-- Create Post Card -->
+                <div class="card shadow-sm mb-4 create-post-card">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Create a Post</h5>
+                        <form id="create-post-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="post-username" placeholder="Enter your username" required>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <textarea class="form-control" id="post-content" rows="3" placeholder="What's on your mind?" required></textarea>
+                                <small class="text-muted position-absolute bottom-0 end-0 p-2" id="char-counter">0 / 280</small>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary px-4 fw-semibold">
+                                    <i class="bi bi-send me-1"></i> Post
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="mb-4">
+                    <div class="input-group shadow-sm search-group">
+                        <span class="input-group-text border-end-0" id="search-icon">
+                            <i class="bi bi-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control border-start-0 ps-0" id="search-input" placeholder="Search posts by username...">
+                    </div>
+                </div>
+
+                <!-- Posts Feed Container -->
+                <div id="posts-container" class="d-flex flex-column gap-3">
+                    <!-- Posts will be rendered here dynamically -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Post Modal -->
+    <div class="modal fade" id="editPostModal" tabindex="-1" aria-labelledby="editPostModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editPostModalLabel">Edit Post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="edit-post-form">
+                        <input type="hidden" id="edit-post-id">
+                        <div class="mb-3">
+                            <label for="edit-post-content" class="form-label fw-semibold">Post Content</label>
+                            <textarea class="form-control" id="edit-post-content" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="edit-post-form" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
