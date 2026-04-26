@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donezo Dashboard - Help Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="ph-fill ph-spinner-gap"></i>
+                <h2>Donezo</h2>
+            </div>
+            
+            <div class="menu-section">
+                <span class="menu-title">MENU</span>
+                <ul class="menu-items">
+                    <li><a href="index.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+                    <li><a href="tasks.html"><i class="ph ph-check-square-offset"></i> Tasks <span class="badge">12+</span></a></li>
+                    <li><a href="calendar.html"><i class="ph ph-calendar-blank"></i> Calendar</a></li>
+                    <li><a href="analytics.html"><i class="ph ph-chart-bar"></i> Analytics</a></li>
+                    <li><a href="team.html"><i class="ph ph-users"></i> Team</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <span class="menu-title">GENERAL</span>
+                <ul class="menu-items">
+                    <li><a href="settings.html"><i class="ph ph-gear"></i> Settings</a></li>
+                    <li class="active"><a href="help.html"><i class="ph-fill ph-info"></i> Help</a></li>
+                    <li class="logout"><a href="logout.html"><i class="ph ph-sign-out"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="download-app">
+                <div class="download-content">
+                    <i class="ph-fill ph-android-logo"></i>
+                    <h4>Download our<br>Mobile App</h4>
+                    <p>Get easy in another way</p>
+                    <button class="btn-download">Download</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-bar">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="shortcut">⌘F</span>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn"><i class="ph ph-envelope-simple"></i></button>
+                    <button class="icon-btn"><i class="ph ph-bell"></i></button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Profile">
+                        <div class="user-info">
+                            <span class="name">Totok Michael</span>
+                            <span class="email">tmichael20@mail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content">
+                <div class="help-header">
+                    <h1>How can we help you?</h1>
+                    <div class="help-search">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for articles, tutorials, or FAQs...">
+                    </div>
+                </div>
+
+                <div class="help-grid">
+                    <div class="help-card">
+                        <i class="ph ph-rocket-launch"></i>
+                        <h3>Getting Started</h3>
+                        <p>Learn the basics and set up your workspace.</p>
+                    </div>
+                    <div class="help-card">
+                        <i class="ph ph-user-circle"></i>
+                        <h3>Account & Security</h3>
+                        <p>Manage your profile and secure your account.</p>
+                    </div>
+                    <div class="help-card">
+                        <i class="ph ph-credit-card"></i>
+                        <h3>Billing & Plans</h3>
+                        <p>Upgrade plans and manage your subscriptions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2 style="margin-bottom: 20px; font-size: 20px;">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            How do I invite team members?
+                            <i class="ph ph-caret-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            You can invite team members by navigating to the Team page and clicking the "Add Member" button. Enter their email address and select their role to send them an invitation link.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I connect external calendars?
+                            <i class="ph ph-caret-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, Donezo integrates with Google Calendar and Outlook. Go to Settings > Integrations to connect your accounts.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How to upgrade my plan?
+                            <i class="ph ph-caret-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Navigate to Settings > Billing and click "Change Plan". You can choose between Pro, Team, and Enterprise tiers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

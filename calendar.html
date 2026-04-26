@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donezo Dashboard - Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="ph-fill ph-spinner-gap"></i>
+                <h2>Donezo</h2>
+            </div>
+            
+            <div class="menu-section">
+                <span class="menu-title">MENU</span>
+                <ul class="menu-items">
+                    <li><a href="index.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+                    <li><a href="tasks.html"><i class="ph ph-check-square-offset"></i> Tasks <span class="badge">12+</span></a></li>
+                    <li class="active"><a href="calendar.html"><i class="ph-fill ph-calendar-blank"></i> Calendar</a></li>
+                    <li><a href="analytics.html"><i class="ph ph-chart-bar"></i> Analytics</a></li>
+                    <li><a href="team.html"><i class="ph ph-users"></i> Team</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <span class="menu-title">GENERAL</span>
+                <ul class="menu-items">
+                    <li><a href="settings.html"><i class="ph ph-gear"></i> Settings</a></li>
+                    <li><a href="help.html"><i class="ph ph-info"></i> Help</a></li>
+                    <li class="logout"><a href="logout.html"><i class="ph ph-sign-out"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="download-app">
+                <div class="download-content">
+                    <i class="ph-fill ph-android-logo"></i>
+                    <h4>Download our<br>Mobile App</h4>
+                    <p>Get easy in another way</p>
+                    <button class="btn-download">Download</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-bar">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" placeholder="Search task">
+                    <span class="shortcut">⌘F</span>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn"><i class="ph ph-envelope-simple"></i></button>
+                    <button class="icon-btn"><i class="ph ph-bell"></i></button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Profile">
+                        <div class="user-info">
+                            <span class="name">Totok Michael</span>
+                            <span class="email">tmichael20@mail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content">
+                <div class="page-header">
+                    <div>
+                        <h1>Calendar</h1>
+                        <p>Schedule and manage team meetings and deadlines.</p>
+                    </div>
+                    <div class="header-actions">
+                        <div class="month-selector">
+                            <button class="icon-btn"><i class="ph ph-caret-left"></i></button>
+                            <h3>November 2024</h3>
+                            <button class="icon-btn"><i class="ph ph-caret-right"></i></button>
+                        </div>
+                        <button class="btn-primary"><i class="ph ph-plus"></i> Add Event</button>
+                    </div>
+                </div>
+
+                <div class="calendar-container card">
+                    <div class="calendar-header-row">
+                        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="cal-cell empty"></div>
+                        <div class="cal-cell empty"></div>
+                        <div class="cal-cell empty"></div>
+                        <div class="cal-cell">
+                            <span class="cal-date">1</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">2</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">3</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">4</span>
+                        </div>
+                        
+                        <div class="cal-cell">
+                            <span class="cal-date">5</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">6</span>
+                            <div class="cal-event event-primary">Design Sync</div>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">7</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">8</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">9</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">10</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">11</span>
+                        </div>
+
+                        <div class="cal-cell">
+                            <span class="cal-date">12</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">13</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">14</span>
+                            <div class="cal-event event-warning">Client Call</div>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">15</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">16</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">17</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">18</span>
+                        </div>
+
+                        <div class="cal-cell">
+                            <span class="cal-date">19</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">20</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">21</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">22</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">23</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">24</span>
+                            <div class="cal-event event-danger">Deadline: App V2</div>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">25</span>
+                        </div>
+                        
+                        <div class="cal-cell">
+                            <span class="cal-date">26</span>
+                            <div class="cal-event event-primary">Meeting w/ Arc</div>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">27</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">28</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">29</span>
+                        </div>
+                        <div class="cal-cell">
+                            <span class="cal-date">30</span>
+                        </div>
+                        <div class="cal-cell empty"></div>
+                        <div class="cal-cell empty"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
